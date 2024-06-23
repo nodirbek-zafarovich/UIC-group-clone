@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { BsLightningCharge } from "react-icons/bs";
-import Lock from "./Lock";
-import { RiExpandDiagonalFill } from "react-icons/ri";
-import { LuPhoneCall } from "react-icons/lu";
-import { FaArrowRightLong } from "react-icons/fa6";
+import React, { useEffect, useState } from 'react';
+import { BsLightningCharge } from 'react-icons/bs';
+import Lock from './Lock';
+import { RiExpandDiagonalFill } from 'react-icons/ri';
+import { LuPhoneCall } from 'react-icons/lu';
+import { FaArrowRightLong } from 'react-icons/fa6';
+import AboutItems from './AboutItems';
 
 const About = () => {
   const [count, setCount] = useState(0);
@@ -35,8 +36,8 @@ const About = () => {
                 <img
                   src={
                     change % 2 === 1
-                      ? "https://uic.group/media/cache/21/e5/21e58126b6c478060b6e6fd54ca6fbba.jpg"
-                      : "https://uic.group/media/cache/5a/70/5a70d134e3000c5ef605393b360f73fe.jpg"
+                      ? 'https://uic.group/media/cache/21/e5/21e58126b6c478060b6e6fd54ca6fbba.jpg'
+                      : 'https://uic.group/media/cache/5a/70/5a70d134e3000c5ef605393b360f73fe.jpg'
                   }
                   alt="img"
                   className="mb-7 h-[400px] rounded-xl  duration-500"
@@ -51,6 +52,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex items-end relative">
+
               <div className="relative group">
                 <div className="bg-[#00ad9c] absolute w-full h-full z-[-8] bg-opacity-30 flex justify-center items-center rounded-xl group-hover:z-0">
                   <div
@@ -63,8 +65,8 @@ const About = () => {
                 <img
                   src={
                     change % 2 === 1
-                      ? "https://uic.group/media/cache/63/2a/632ae021916378d650ff3ffb98fcb7c1.jpg"
-                      : "https://uic.group/media/cache/1c/ac/1cac8a7441794ad91f2cc94093c84fd0.jpg"
+                      ? 'https://uic.group/media/cache/63/2a/632ae021916378d650ff3ffb98fcb7c1.jpg'
+                      : 'https://uic.group/media/cache/1c/ac/1cac8a7441794ad91f2cc94093c84fd0.jpg'
                   }
                   alt=""
                   className="rounded-xl  h-[400px]  duration-500"
@@ -74,18 +76,16 @@ const About = () => {
           </div>
           <div>
             <p className="text-xl font-bold text-slate-500 flex gap-5 mb-5">
-              <span className="text-[#00ad9c] text-xl font-bold">
-                IN THE WORLD
-              </span>
+              
+              <span className="text-[#00ad9c] text-xl font-bold">IN THE WORLD</span>
             </p>
             <h2 className="text-[white] text-7xl font-bold mb-7">About us</h2>
             <p className="text-[#929293]">
-              Every big company needs to thank not only itself, but also those
-              who have stood beside it and believed in it. After all, the most
-              important principle in our work is trust. <br /> <br /> Trust not
-              only ensures the loyalty of customers and partners, but also
-              increases our demand for ourselves. We cooperate on the basis of
-              relations built on thousand-year human traditions.
+              Every big company needs to thank not only itself, but also those who have stood beside
+              it and believed in it. After all, the most important principle in our work is trust.{' '}
+              <br /> <br /> Trust not only ensures the loyalty of customers and partners, but also
+              increases our demand for ourselves. We cooperate on the basis of relations built on
+              thousand-year human traditions.
             </p>
             <div className="mt-8 flex gap-32">
               <div className="flex gap-6">
@@ -119,6 +119,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          <AboutItems/>
         </div>
         {count === 1 && (
           <div
@@ -148,6 +149,7 @@ const About = () => {
             </div>
           </div>
         )}
+
       </div>
     </div>
   );

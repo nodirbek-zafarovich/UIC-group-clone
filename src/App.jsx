@@ -1,9 +1,9 @@
-import About from './About';
-import Footer from './Footer';
-import Header from './Header';
-import Partners from './Partners';
-import Portfolio from './Portfolio';
-import Services from './Services';
+import About from './components/About';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Partners from './components/Partners';
+import Portfolio from './components/Portfolio';
+import Services from './components/ServicesComp';
 
 const App = () => {
   return (
@@ -11,10 +11,9 @@ const App = () => {
       <Header />
       <About />
       <Portfolio/>
-      <Services/>
+      <Services title={"Services"} desc={'OUR'} />
       <Partners/>
       <Footer/>
-      
     </>
   );
 };

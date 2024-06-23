@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --black: rgba(118, 117, 117, 0.5);
+:root{
+  --black:rgba(118, 117, 117, 0.5) ;
   --pri: #00a795;
 }
 
@@ -29,8 +29,13 @@ html {
 
 .header {
   height: 100vh;
-  background-image: url(../public/globe.webp);
+  background-image: url("../public/globe.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.career {
+  display: grid;
+  grid-template-columns: 1fr;
 }
